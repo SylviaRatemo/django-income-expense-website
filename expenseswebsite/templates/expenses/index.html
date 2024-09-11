@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+<h1>Expenses List </h1>
+
+<ul class="list-group">
+    {% comment %} {% for expense in expenses %}
+        <li>{{ expense.date }} - {{ expense.amount }} - {{ expense.description }}</li>
+    {% endfor %}
+    <a href="{% url 'expenses:add_expenses' %}">Add Expenses</a>         {% endcomment %}
+<li class="list-group-item">Bought Beer</li>
+<li class="list-group-item">Two Beer</li>
+<li class="list-group-item">Three Beer</li>
+<li class="list-group-item">Four Beer</li>
+<li class="list-group-item">Six Beer</li>
+<li class="list-group-item">Seven Beer</li>
+<li class="list-group-item">Eight Beer</li>
+
+</ul>
